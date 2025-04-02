@@ -1,0 +1,27 @@
+<div class="container mt-5">
+    <h2 class="text-primary text-center">Update Login Form</h2>
+    <div class="row mt-5">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+            <img src="https://www.freeiconspng.com/thumbs/login-icon/login-system-icon-13.png " class="img-fluid" alt="">
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-5">
+            <form action=""(ngSubmit)="editShop()">
+                <p>
+                    Shop Name: <input type="text" name="shopname" class="form-control w-75" placeholder="Enter the Name" [(ngModel)]="shop.shopname">
+                </p>
+                <p>
+                    Location: <input type="text" name="location" class="form-control w-75" placeholder="Enter the Location" [(ngModel)]="shop.location">
+                </p>
+                <p>
+                    Date: <input type="text" name="date" class="form-control w-75" placeholder="Enter Date DD/MM/YY" [(ngModel)]="shop.date">
+                </p>
+                <p>
+                    Description:<textarea name="description"  cols="10" rows="5" class="form-control w-75" [(ngModel)]="shop.description"></textarea>
+                </p>
+                <p>
+                <button class="btm btm-primary bg-danger" type="submit">Submit</button>
+            </p>
+            </form>
+        </div>
+    </div>
+</div>

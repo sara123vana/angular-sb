@@ -1,0 +1,18 @@
+<div class="container mt-5">
+    <div class="row">
+        <div *ngFor="let shop of shops" class="col-6 col-md-4 col-lg-3 col-sm-6">
+            <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">{{shop.date}}</div>
+                <div class="card-body">
+                  <h5 class="card-title">{{shop.shopname}}</h5>
+                  <p class="card-text">{{shop.description}}</p>
+                  <p class="card-text">{{shop.location}}</p>
+                  <p>
+                    <button [routerLink]="['/editshop',shop.id]" class="btn btn-primary">Edit</button>
+                    <button (click)="deleteShop(shop.id)" class="btn btn-danger ms-3">Delete</button>
+                  </p>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
